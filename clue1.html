@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clue 1</title>
+</head>
+<body>
+  <h2>Clue 1: Look where knowledge is kept</h2>
+  <input id="answer" placeholder="Your answer">
+  <button onclick="checkAnswer()">Submit</button>
+
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input === "library") {
+        window.location.href = "clue2.html";
+      } else {
+        alert("Try again!");
+      }
+    }
+  </script>
+</body>
+</html>
